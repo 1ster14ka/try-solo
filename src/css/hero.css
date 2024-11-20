@@ -1,0 +1,44 @@
+.hero-container {
+  padding-top: 96px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  font-family: 'Impact', sans-serif;
+}
+.span-title {
+  color: #00b068;
+}
+
+.wrapp-hero {
+  position: relative;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.hero-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.background-wrapp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #bcdfd1;
+  border-radius: 16px;
+  width: 165px;
+  height: 92px;
+  z-index: -1;
+}

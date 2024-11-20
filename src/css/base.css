@@ -30,3 +30,12 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+@font-face {
+  font-family: 'ImpactFont';
+  src: url('../fonts/impact.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}

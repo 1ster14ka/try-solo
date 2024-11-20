@@ -22,7 +22,7 @@
   width: 90%;
   min-width: 320px;
   max-width: 360px;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 8px;
   overflow: hidden;
 }
@@ -33,8 +33,18 @@
   align-items: center;
 }
 
+.logo {
+  color: black;
+}
+
 .logo-span {
   color: green;
+}
+
+.wrapp-logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .icon-close {
@@ -76,4 +86,5 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 99;
 }

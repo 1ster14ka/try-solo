@@ -1,9 +1,12 @@
-.header {
+.wrapp-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
 }
@@ -18,16 +21,10 @@
 .logo-span {
   color: black;
 }
-.navigation {
+.link-burger {
+  display: flex;
+  align-items: center;
 }
-.nav-list {
-}
-.nav-item {
-}
-
-.icon-burger {
-}
-
 .navigation {
   display: none;
 }
@@ -35,6 +32,7 @@
 @media only screen and (min-width: 768px) {
   .header-container {
     padding: 32px 20px;
+    justify-content: space-between;
   }
 
   .logo {

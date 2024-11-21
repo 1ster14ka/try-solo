@@ -1,0 +1,153 @@
+.section-about {
+  padding-top: 80px;
+}
+.about-title {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  font-family: 'Impact', sans-serif;
+  margin-bottom: 40px;
+}
+.span-me {
+  color: #00b068;
+}
+
+.img-about {
+  margin-bottom: 40px;
+}
+
+.text-about {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  font-family: 'Poppins', sans-serif;
+}
+.title-about {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 32px;
+}
+
+.text-bio {
+  margin-bottom: 24px;
+  margin-top: 32px;
+}
+.wrapp-education {
+  margin-top: 40px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wrapp-role {
+  margin-top: 40px;
+}
+
+.role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.education-item {
+  position: relative;
+}
+
+.role-item {
+  position: relative;
+}
+
+.text-about {
+  margin-left: 32px;
+}
+
+.text-about::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+  background-color: #00b068;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-about {
+    padding-top: 124px;
+  }
+
+  .about-title {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
+
+  .img-about {
+    height: 392px;
+    align-self: flex-end;
+    margin-top: 408px;
+    margin-bottom: 0;
+  }
+
+  .wrapp-bio {
+    display: flex;
+    gap: 32px;
+  }
+  .wrapp-bio-text {
+    align-self: flex-start;
+  }
+
+  .title-about {
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+  }
+
+  .wrapp-about-text {
+    display: flex;
+    gap: 32px;
+  }
+
+  /* .wrapp-education {
+    max-width: 336px;
+  } */
+  .wrapp-education,
+  .wrapp-role {
+    flex: 1;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-about {
+    padding-top: 164px;
+  }
+
+  .img-about {
+    height: 448px;
+    align-self: flex-end;
+    margin-top: 272px;
+    margin-left: 208px;
+    margin-bottom: 0;
+  }
+
+  .wrapp-bio {
+    gap: 132px;
+  }
+
+  .wrapp-bio-text {
+    max-width: 488px;
+  }
+  .wrapp-about-text {
+    margin-left: 208px;
+    gap: 136px;
+  }
+}

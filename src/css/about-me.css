@@ -65,11 +65,15 @@
   position: relative;
 }
 
+.wrapp-bio-text p:not(:last-of-type) {
+  margin-bottom: 24px; /* Пример отступа */
+}
+
 .text-about {
   margin-left: 32px;
 }
 
-.text-about::before {
+.wrapp-about-text .text-about::before {
   content: '';
   position: absolute;
   left: 10px;

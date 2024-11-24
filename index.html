@@ -12,7 +12,9 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/try-solo/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/try-solo/assets/index-B7NaYqXG.css">
+    <link rel="modulepreload" crossorigin href="/try-solo/assets/vendor-CTqzIL4Y.js">
+    <link rel="stylesheet" crossorigin href="/try-solo/assets/vendor-CzG10Eoq.css">
+    <link rel="stylesheet" crossorigin href="/try-solo/assets/index-BUzOod4S.css">
   </head>
   <body>
     <!-- <header class="header">
@@ -49,7 +51,7 @@
     </nav>
     <button type="button" class="burger-btn">
       <svg class="icon-burger" width="22" height="16">
-        <use href="../img/sprite.svg#icon-burger"></use>
+        <use href="/try-solo/assets/sprite-0BILNJoG.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
@@ -61,41 +63,70 @@
     <!-- <svg class="hero-svg" width="320">
       <use href="../img/sprite.svg#icon-decor-bg-hero-mob"></use>
     </svg> -->
-    <img src="../img/bg-img/bg-mob-hero.png" alt="" class="bg-hero" />
+    <!-- <img src="../img/bg-img/bg-mob-hero.png" alt="" class="bg-hero" /> -->
     <h1 class="title">
       Hello, I am
-      <img class="hero-img" src="../img/imgs-about-me/s2.jpg" alt="" /><span
-        class="span-title"
-        >Fullstack developer</span
-      >
+      <img
+        class="hero-img"
+        srcset="../img/imgs-about-me/s2.jpg 1x, ../img/imgs-about-me/s2@2x.jpg 2x"
+        src="../img/imgs-about-me/s2.jpg"
+        alt="user"
+      /><span class="span-title">Fullstack developer</span>
     </h1>
     <div class="wrapp-hero-text">
       <div class="wrapp-hero">
-        <svg class="hero-arrow" width="28" height="">
-          <use href="../img/sprite.svg#icon-icon-arrow2"></use>
-        </svg>
-        <a href="" class="hero-link">Order the project</a>
+        <div class="wrapp-arrow">
+          <svg class="hero-arrow" width="28" height="">
+            <use href="../img/sprite.svg#icon-icon-arrow2"></use>
+          </svg>
+          <a href="" class="hero-link">Order the project</a>
+        </div>
         <div class="background-wrapp"></div>
       </div>
       <p class="hero-text">
-        I work with people all over the world to create impressive and
-        functional websites that reflect each client’s unique personality.
+        I work with people all over the world to create
+        <span class="green-text">impressive</span> and
+        <span class="green-text">functional websites</span> that reflect each
+        client’s unique personality.
       </p>
     </div>
   </div>
   <ul class="hero-list">
-    <li class="hero-item">Instagram</li>
-    <li class="hero-item">Facebook</li>
-    <li class="hero-item">Linkedin</li>
-    <li class="hero-item">GitHub</li>
+    <li class="hero-item">
+      <a href="https://www.instagram.com/goitclub/" class="hover-link"
+        >Instagram</a
+      >
+    </li>
+    <li class="hero-item">
+      <a href="https://www.facebook.com/goITclub/" class="hover-link"
+        >Facebook</a
+      >
+    </li>
+    <li class="hero-item">
+      <a
+        href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+        class="hover-link"
+        >Linkedin</a
+      >
+    </li>
+    <li class="hero-item">
+      <a href="https://github.com/1ster14ka/js-avengers" class="hover-link"
+        >GitHub</a
+      >
+    </li>
   </ul>
 </section>
 
-      <section class="section-about">
+      <section class="section-about" id="about">
   <div class="container about-container">
     <h2 class="about-title">ABOUT <span class="span-me">ME</span></h2>
     <div class="wrapp-bio">
-      <img src="/try-solo/assets/s3-DuQV38GB.jpg" alt="" class="img-about" />
+      <img
+        srcset="/try-solo/assets/s3-DuQV38GB.jpg 1x, /try-solo/assets/s3@2x-3XDLJl91.jpg 2x"
+        src="/try-solo/assets/s3-DuQV38GB.jpg"
+        alt="about me"
+        class="img-about"
+      />
 
       <div class="wrapp-bio-text">
         <h3 class="title-about">BIO</h3>
@@ -158,7 +189,7 @@
 </section>
 
       
-      <section class="section-project">
+      <section class="section-project" id="project">
   <div class="container container-project">
     <h2 class="title-proj">my <span class="span-proj">projects</span></h2>
     <ul class="project-catalog">
@@ -334,7 +365,138 @@
   </div>
 </section>
 
-      
+      <section class="faq-section">
+  <div class="container faq-container">
+    <h2 class="faq-heading">
+      frequently asked <span class="faq-heading-span">question</span>
+    </h2>
+    <div class="questions-container">
+      <div class="ac">
+        <div type="button" class="ac-trigger">
+          <h3>
+            What programming languages ​​are most often used in your project?
+          </h3>
+          <svg class="faq-icon" width="24" height="24">
+            <use
+              href="../img/svg-icons/symbol-defs.svg#icon-vector-down-1"
+            ></use>
+          </svg>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <div type="button" class="ac-trigger">
+          <h3>What are the deadlines for the project?</h3>
+          <svg class="faq-icon" width="24" height="24">
+            <use
+              href="../img/svg-icons/symbol-defs.svg#icon-vector-down-1"
+            ></use>
+          </svg>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <div type="button" class="ac-trigger">
+          <h3>What payment methods do you accept?</h3>
+          <svg class="faq-icon" width="24" height="24">
+            <use
+              href="../img/svg-icons/symbol-defs.svg#icon-vector-down-1"
+            ></use>
+          </svg>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <div type="button" class="ac-trigger">
+          <h3>How can I contact you?</h3>
+          <svg class="faq-icon" width="24" height="24">
+            <use
+              href="../img/svg-icons/symbol-defs.svg#icon-vector-down-1"
+            ></use>
+          </svg>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <div type="button" class="ac-trigger">
+          <h3>Do you provide advice or support?</h3>
+          <svg class="faq-icon" width="24" height="24">
+            <use
+              href="../img/svg-icons/symbol-defs.svg#icon-vector-down-1"
+            ></use>
+          </svg>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <div type="button" class="ac-trigger">
+          <h3>
+            What does the process of developing a software product look like
+            from idea to implementation?
+          </h3>
+          <svg class="faq-icon" width="24" height="24">
+            <use
+              href="../img/svg-icons/symbol-defs.svg#icon-vector-down-1"
+            ></use>
+          </svg>
+        </div>
+
+        <div class="ac-panel" style="height: 100%">
+          <p class="ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       
       
     </main>
@@ -375,14 +537,20 @@
         <use href="../img/sprite.svg#icon-x"></use>
       </svg>
     </button>
-
-    <img src="../img/bg-img/bg-mob-hero.png" alt="" class="bg-header" />
   </div>
   <ul class="nav-list">
-    <li class="nav-item"><a href="">About me</a></li>
-    <li class="nav-item"><a href="">Projects</a></li>
-    <li class="nav-item"><a href="">Contacts</a></li>
+    <li class="nav-item"><a href="#about" class="modal-link">About me</a></li>
+    <li class="nav-item"><a href="#project" class="modal-link">Projects</a></li>
+    <li class="nav-item">
+      <a href="#contacts" class="modal-link">Contacts</a>
+    </li>
   </ul>
+  <img
+    srcset="/try-solo/assets/bg-mob-hero-9ZBS2J1q.png 1x, /try-solo/assets/bg-mob-hero@2x-BQcHm9jJ.png 2x"
+    src="/try-solo/assets/bg-mob-hero-9ZBS2J1q.png"
+    alt="background"
+    class="bg-header"
+  />
 </div>
 
 

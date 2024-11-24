@@ -2,6 +2,15 @@
   padding-top: 96px;
   position: relative;
   margin-bottom: 72px;
+  background-image: image-set(
+    url('../img/bg-img/bg-mob-hero.png') 1x,
+    url('../img/bg-img/bg-mob-hero@2x.png') 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  /* background-size: cover; */
 }
 
 .title {
@@ -17,6 +26,10 @@
   color: #00b068;
 }
 
+.green-text {
+  color: #00b068;
+}
+
 .wrapp-hero {
   position: relative;
   height: 92px;
@@ -27,12 +40,30 @@
   margin-bottom: 40px;
 }
 
+.wrapp-hero:hover .background-wrapp,
+.wrapp-hero:focus .background-wrapp {
+  background: #00b068;
+}
+
+.wrapp-hero:hover .wrapp-arrow {
+  transform: translateX(40%);
+  transition: transform ease-out 0.7s;
+}
+
+.wrapp-arrow {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
 .hero-link {
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 156%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  z-index: 999;
 }
 
 .background-wrapp {
@@ -43,14 +74,14 @@
   border-radius: 16px;
   width: 165px;
   height: 92px;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .bg-hero {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .hero-text {
@@ -88,6 +119,14 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .hero-container {
+    background-image: image-set(
+      url('../img/bg-img/bg-tab-hero.png') 1x,
+      url('../img/bg-img/bg-tab-hero@2x.png') 2x
+    );
+    background-position: center;
+  }
+
   .background-wrapp {
     left: 155px;
     width: 261px;
@@ -128,6 +167,14 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  .hero-container {
+    background-image: image-set(
+      url('../img/bg-img/bg-desk-hero.png') 1x,
+      url('../img/bg-img/bg-desk-hero@2x.png') 2x
+    );
+    background-position: center;
+  }
+
   .hero-img {
     display: inline-block;
     border: 1px solid #000;

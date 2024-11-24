@@ -163,7 +163,7 @@
   top: 64px;
   left: 50%;
   transform: translate(-50%);
-  z-index: 99;
+  z-index: -1;
 
   margin: 0 auto;
 }
@@ -186,4 +186,10 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-overlay {
+    display: none;
+  }
 }

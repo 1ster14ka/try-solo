@@ -11,10 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script type="module" crossorigin src="/try-solo/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/try-solo/assets/vendor-CTqzIL4Y.js">
-    <link rel="stylesheet" crossorigin href="/try-solo/assets/vendor-CzG10Eoq.css">
-    <link rel="stylesheet" crossorigin href="/try-solo/assets/index-BUzOod4S.css">
+    <link rel="modulepreload" crossorigin href="/try-solo/assets/vendor-BzzZJZMN.js">
+    <link rel="stylesheet" crossorigin href="/try-solo/assets/vendor-Bj7nYe4R.css">
+    <link rel="stylesheet" crossorigin href="/try-solo/assets/index-heOBwvSk.css">
   </head>
   <body>
     <!-- <header class="header">
@@ -40,7 +44,7 @@
 
 <header class="header">
   <div class="container header-container">
-    <a href="" class="logo"><span class="logo-span">Lloyd</span>Jefferson.</a>
+    <a href="" class="logo">Lloyd<span class="logo-span">Jefferson.</span></a>
 
     <nav class="navigation">
       <ul class="nav-list-head">
@@ -68,8 +72,8 @@
       Hello, I am
       <img
         class="hero-img"
-        srcset="../img/imgs-about-me/s2.jpg 1x, ../img/imgs-about-me/s2@2x.jpg 2x"
-        src="../img/imgs-about-me/s2.jpg"
+        srcset="data:image/jpeg;base64,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 1x, /try-solo/assets/s2@2x-rG5fwTJR.jpg 2x"
+        src="data:image/jpeg;base64,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"
         alt="user"
       /><span class="span-title">Fullstack developer</span>
     </h1>
@@ -147,6 +151,7 @@
           actively engage in studying new technologies and practices to stay
           current with the  latest innovations in the field.
         </p>
+        <div class="wrapp-bg"><div class="bg-img"></div></div>
       </div>
     </div>
     <div class="wrapp-about-text">
@@ -188,7 +193,26 @@
   </div>
 </section>
 
-      
+      <section class="section-skills">
+  <h2 class="hidden-title">Section Tech Skills</h2>
+  <div class="marquee">
+    <div class="marquee__inner">
+      <p>
+        HTML/CSS &nbsp;|&nbsp; JAVASCRIPT &nbsp;|&nbsp; REACT &nbsp;|&nbsp;
+        NODE.JS
+      </p>
+    </div>
+  </div>
+  <div class="marquee marquee--reverse">
+    <div class="marquee__inner">
+      <p>
+        HTML/CSS &nbsp;|&nbsp; JAVASCRIPT &nbsp;|&nbsp; REACT &nbsp;|&nbsp;
+        NODE.JS
+      </p>
+    </div>
+  </div>
+</section>
+
       <section class="section-project" id="project">
   <div class="container container-project">
     <h2 class="title-proj">my <span class="span-proj">projects</span></h2>
@@ -301,6 +325,13 @@
 
       <section class="benefits">
   <div class="container container-benef">
+    <div class="bg-img-benef">
+      <img
+        srcset="/try-solo/assets/bg-desk-benefits-CPrIDe4E.png 1x, /try-solo/assets/bg-desk-benefits@2x-CFzx_Kn2.png 2x"
+        src="/try-solo/assets/bg-desk-benefits-CPrIDe4E.png"
+        alt="backgroun-img"
+      />
+    </div>
     <h2 class="title-benef">
       <span class="text-green">Benefits</span> of working with me
     </h2>
@@ -497,10 +528,170 @@
   </div>
 </section>
 
-      
-      
+      <div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="/try-solo/assets/s5-img1-BeU5Gs30.jpg" alt="Image 1" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/try-solo/assets/s5-img2-BVPd4ZtC.jpg" alt="Image 2" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/try-solo/assets/s5-img3-BZwkJqPG.jpg" alt="Image 3" />
+    </div>
+  </div>
+  <!-- Кнопки для навигации -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+      <section class="contacts-section" id="contacts">
+  <div class="container container-wt">
+    <div class="head-decor">
+      <h2 class="head-work">
+        let’s
+        <span class="common-span">work together</span>
+      </h2>
+      <picture>
+        <source srcset="1x, 2x" media="(min-width: 1280px)" />
+        <source srcset="1x, 2x" media="(min-width: 768px)" />
+        <img src="" alt="Decor" class="wt-decor" />
+      </picture>
+    </div>
+    <div class="form-wrap">
+      <ul class="form-colomn">
+        <li>
+          <p class="text-idea">
+            Contact me to transform your ideas into exceptional solutions.
+          </p>
+        </li>
+        <li>
+          <div class="address">
+            <ul class="address-menu">
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use href=""></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="tel:+380503247690"
+                    target="_blank"
+                    >+38 050 324 76 90</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use href=""></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="mailto:info@goit.ua"
+                    target="_blank"
+                    >info@goit.ua</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use href=""></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="https://www.google.com/maps/search/?api=1&query=Київ+Ю.Іллєнка+12"
+                    target="_blank"
+                  >
+                    м. Київ, вул. Ю. Іллєнка, 12
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="form-div">
+        <form class="feedback-form" id="contactForm" autocomplete="off">
+          <label for="email" class="visualy-hidden"></label>
+          <input
+            class="input"
+            id="email"
+            type="email"
+            placeholder="Your email*"
+            name="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            autocomplete="email"
+          />
+          <label for="message" class="visually-hidden"></label>
+          <textarea
+            class="input txt-ar"
+            id="message"
+            placeholder="Message"
+            name="message"
+            rows="8"
+            autocomplete="off"
+          ></textarea>
+          <button class="btn" type="submit" id="sendMessage">
+            SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Модальне вікно -->
+  <div class="backdrop" id="backdrop">
+    <div class="modal" id="successModal">
+      <button type="button" class="modal-close" id="closeModal">
+        <svg class="modal-icon" width="12" height="12">
+          <use href=""></use>
+        </svg>
+      </button>
+      <h2 class="modalTitle common-span" id="jsTitle"></h2>
+      <p class="modalText" id="jsText"></p>
+    </div>
+  </div>
+</section>
+
     </main>
-    
+    <footer class="footer">
+  <div class="container container-footer">
+    <div class="wrapp-logo">
+      <a href="#" class="logo"
+        >Lloyd<span class="logo-span">Jefferson.</span></a
+      >
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a href="https://www.instagram.com/goitclub/" class="hover-link"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer-item">
+          <a href="https://www.facebook.com/goITclub/" class="hover-link"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            class="hover-link"
+            >Linkedin</a
+          >
+        </li>
+        <li class="footer-item">
+          <a href="https://github.com/1ster14ka/js-avengers" class="hover-link"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <p class="copyright">© Copyright 2024. Made by LloydJefferson</p>
+    </div>
+  </div>
+</footer>
+
 
     <!-- <div class="modal-overlay" id="modal-overlay">
   <div class="modal-container">
@@ -552,7 +743,6 @@
     class="bg-header"
   />
 </div>
-
 
   </body>
 </html>

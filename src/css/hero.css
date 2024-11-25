@@ -46,8 +46,15 @@
 }
 
 .wrapp-hero:hover .wrapp-arrow {
-  transform: translateX(40%);
+  transform: translateX(25%);
   transition: transform ease-out 0.7s;
+}
+
+@media only screen and (min-width: 360px) {
+  .wrapp-hero:hover .wrapp-arrow {
+    transform: translateX(40%);
+    transition: transform ease-out 0.7s;
+  }
 }
 
 .wrapp-arrow {
@@ -131,6 +138,11 @@
     left: 155px;
     width: 261px;
     height: 96px;
+  }
+
+  .wrapp-hero:hover .wrapp-arrow {
+    transform: translateX(50%);
+    transition: transform ease-out 0.7s;
   }
 
   .title {

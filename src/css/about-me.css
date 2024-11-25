@@ -15,6 +15,8 @@
 
 .img-about {
   margin-bottom: 40px;
+  border-radius: 20px;
+  border-color: transparent;
 }
 
 .text-about {
@@ -31,6 +33,11 @@
   letter-spacing: 0.02em;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 32px;
+}
+
+.role-item .text-about,
+.education-item .text-about {
+  margin-left: 32px;
 }
 
 .text-bio {
@@ -66,11 +73,7 @@
 }
 
 .wrapp-bio-text p:not(:last-of-type) {
-  margin-bottom: 24px; /* Пример отступа */
-}
-
-.text-about {
-  margin-left: 32px;
+  margin-bottom: 24px;
 }
 
 .wrapp-about-text .text-about::before {
@@ -85,6 +88,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .wrapp-bio-text {
+    max-width: 336px;
+  }
   .section-about {
     padding-top: 124px;
   }
@@ -98,16 +104,32 @@
   .img-about {
     height: 392px;
     align-self: flex-end;
-    margin-top: 408px;
+    margin-top: 368px;
     margin-bottom: 0;
+  }
+
+  .wrapp-education {
+    margin-top: 62px;
+  }
+  .wrapp-role {
+    margin-top: 62px;
   }
 
   .wrapp-bio {
     display: flex;
     gap: 32px;
   }
-  .wrapp-bio-text {
-    align-self: flex-start;
+
+  .bg-img {
+    position: absolute;
+    background-image: image-set(
+      url('../img/bg-img/bg-tab-about.png') 1x,
+      url('../img/bg-img/bg-tab-about@2x.png') 2x
+    );
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 336px;
+    height: 252px;
   }
 
   .title-about {
@@ -121,16 +143,32 @@
     gap: 32px;
   }
 
-  /* .wrapp-education {
-    max-width: 336px;
-  } */
   .wrapp-education,
   .wrapp-role {
     flex: 1;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
+  .wrapp-bio-text {
+    max-width: 488px;
+  }
+
+  .wrapp-bg {
+    position: relative;
+  }
+  .bg-img {
+    background-image: image-set(
+      url('../img/bg-img/bg-desk-about.png') 1x,
+      url('../img/bg-img/bg-desk-about@2x.png') 2x
+    );
+    width: 384px;
+    height: 288px;
+
+    top: 40px;
+    left: 104px;
+  }
+
   .section-about {
     padding-top: 164px;
   }

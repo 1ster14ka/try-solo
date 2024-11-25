@@ -2,6 +2,10 @@
   padding-top: 80px;
 }
 
+.bg-img-benef {
+  display: none;
+}
+
 .benef-middle {
   display: flex;
   flex-direction: column;
@@ -92,9 +96,6 @@
 
   .benef-middle li {
     max-width: 336px;
-    /* display: flex;
-    flex-direction: column;
-    gap: 16px; */
   }
 }
 
@@ -138,14 +139,18 @@
     padding: 0 32px;
   }
 
-  /* .title-benef {
-    margin-bottom: 0;
-    margin-top: -100px;
-  } */
-
   .title-benef {
     position: absolute;
     top: 0;
     left: 32px;
+  }
+
+  .bg-img-benef {
+    display: block;
+    width: 526px;
+    position: absolute;
+    top: -116px;
+    right: 32px;
+    height: 408px;
   }
 }
